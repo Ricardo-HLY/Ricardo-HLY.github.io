@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>注册新用户</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body{
+            background:#fff;
+        }
+        .header{
+            width:600px;
+            height:60px;
+            background:#666;
+            color:#fff;
+            text-align:center;
+            line-height:60px;
+            font-size:24px;
+            margin:20px auto 0;
+        }
+        .register-box{
+            width:600px;
+            border:2px solid #ddd;
+            margin:0 auto;
+            padding:10px;
+        }
+        .reg-title{
+            background:#eee;
+            padding:8px 15px;
+            font-size:18px;
+            border:1px solid #ccc;
+            margin-bottom:20px;
+        }
+        .form-item{
+            width:350px;
+            margin:15px auto;
+            display:flex;
+            align-items:center;
+        }
+        .form-item label{
+            width:80px;
+            font-size:14px;
+        }
+        .form-item input{
+            flex:1;
+            height:28px;
+            padding:0 5px;
+        }
+        .submit-btn{
+            width:280px;
+            height:32px;
+            background:#555;
+            color:#fff;
+            border:none;
+            margin:10px auto;
+            display:block;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">网上书城</div>
+    <div class="register-box">
+        <div class="reg-title">➕ 注册新用户</div>
+        <form action="#" method="post">
+            <div class="form-item">
+                <label>👤用户名</label>
+                <input type="text" name="username" placeholder="请输入用户名">
+            </div>
+            <div class="form-item">
+                <label>🔑密码</label>
+                <input type="password" name="pwd" placeholder="请输入密码">
+            </div>
+            <div class="form-item">
+                <label>🔑确认密码</label>
+                <input type="password" name="repwd" placeholder="请再次输入密码">
+            </div>
+            <div class="form-item">
+                <label>✉️电子邮件</label>
+                <input type="email" name="email" placeholder="请输入邮箱">
+            </div>
+            <input type="submit" value="注册新用户" class="submit-btn">
+        </form>
+    </div>
+</body>
+</html>
